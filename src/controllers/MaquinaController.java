@@ -25,13 +25,14 @@ public class MaquinaController {
         for(Maquina maquina: maquinas){
             if(maquina.getSubred()>umbral){
                 lista.add(maquina);
+
             }
         }
 
         return lista;
     
     }
-
+    // Actions
     public Set<Maquina> ordenarPorSubred(Stack<Maquina> pila){
         Set<Maquina> ordenado = new TreeSet<>();
         while(!pila.isEmpty()){
